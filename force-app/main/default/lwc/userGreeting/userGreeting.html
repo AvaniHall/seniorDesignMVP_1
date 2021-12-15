@@ -1,0 +1,9 @@
+<template>
+    <lightning-card variant title= {user} icon-name="action:user">
+        <lightning-button-menu alternative-text="Advising menu" slot="actions">
+            <lightning-menu-item value="Make an appointment with an advisor" label="Menu Item 1"></lightning-menu-item>
+            <lightning-menu-item value="View Degree Requirements Worksheet" label="Menu Item 2"></lightning-menu-item>
+        </lightning-button-menu>
+        <p class ="slds-p-horizontal_small"> Status: {classStatus} <br> {numOfCredits} credits </p>
+      </lightning-card>
+</template>
