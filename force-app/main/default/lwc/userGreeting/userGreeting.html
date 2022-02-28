@@ -4,6 +4,13 @@
             <lightning-menu-item value="Make an appointment with an advisor" label="Menu Item 1"></lightning-menu-item>
             <lightning-menu-item value="View Degree Requirements Worksheet" label="Menu Item 2"></lightning-menu-item>
         </lightning-button-menu>
-        <p class ="slds-p-horizontal_small"> Status: {classStatus} <br> {numOfCredits} credits </p>
+        <div class ="slds-var-p-horizontal_small"> 
+            <p> Status: {classStatus} <br> {numOfCredits} credits </p>
+        <template if:true={courses.data}>
+            <template for:each={courses.data} for:item="course">
+                <p key={course.Id}> {course.Name} </p>
+            </template>
+        </template>
+        </div>
       </lightning-card>
 </template>
