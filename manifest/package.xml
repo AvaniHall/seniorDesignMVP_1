@@ -65,7 +65,6 @@
 		<name>BrandingSet</name>
 	</types>
 	<types>
-    
 		<members>*</members>
 		<name>CallCenter</name>
 	</types>
@@ -587,5 +586,5 @@
 		<members>*</members>
 		<name>Workflow</name>
 	</types>
-	<version>51.0</version>
+	<version>53.0</version>
 </Package>

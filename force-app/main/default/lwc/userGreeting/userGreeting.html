@@ -1,16 +1,19 @@
 <template>
     <lightning-card variant title= {user} icon-name="action:user">
-        <lightning-button-menu alternative-text="Advising menu" slot="actions">
-            <lightning-menu-item value="Make an appointment with an advisor" label="Menu Item 1"></lightning-menu-item>
-            <lightning-menu-item value="View Degree Requirements Worksheet" label="Menu Item 2"></lightning-menu-item>
+        <lightning-button-menu alternative-text="Advising menu" slot="actions" menu-alignment="right">
+            <lightning-menu-item value="option1" label="Make an appointment with an advisor"></lightning-menu-item>
+            <lightning-menu-item value="option2" label="View Degree Requirements Worksheet"></lightning-menu-item>
         </lightning-button-menu>
         <div class ="slds-var-p-horizontal_small"> 
             <p> Status: {classStatus} <br> {numOfCredits} credits </p>
-        <template if:true={courses.data}>
-            <template for:each={courses.data} for:item="course">
-                <p key={course.Id}> {course.Name} </p>
-            </template>
-        </template>
+           <!-- text input for student id <div class="slds-var-p-around_medium lgc-bg">
+                <lightning-input type="text" name="studentId" label="Enter student Id" onchange={sendStudentId}></lightning-input>
+            </div>  
+            <template if:true={courses.data}>
+                <template for:each={courses.data} for:item="course">
+                    <p key={course.Id}> {course.Name} </p>
+                </template>
+            </template> -->
         </div>
       </lightning-card>
 </template>
